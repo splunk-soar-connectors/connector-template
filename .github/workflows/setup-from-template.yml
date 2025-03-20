@@ -38,6 +38,18 @@ jobs:
             sed -i "s/TEMPLATE/${REPO_NAME^^}/g" "$file"
           done
 
+          if [ -f "CONNECTOR_README.md" ]; then
+            sed -i "s/template App/${REPO_NAME} App/g" CONNECTOR_README.md
+
+            if [ -f "README.md" ]; then
+              rm README.md
+            fi
+            mv CONNECTOR_README.md README.md
+            echo "Updated and renamed CONNECTOR_README.md to README.md"
+          else
+            echo "CONNECTOR_README.md not found, skipping update"
+          fi
+
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add .
