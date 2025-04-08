@@ -1,49 +1,54 @@
-<img src="logo_dark.svg" width="300">
+# Example App Name
 
-# SOAR App Template
+Publisher: Splunk \
+Connector Version: 1.0.0 \
+Product Vendor: Vendor Name \
+Product Name: Product Name \
+Minimum Product Version: 6.3.0
 
-Welcome to the Splunk SOAR App Template repository. This template helps you quickly create new SOAR apps by handling the basic setup.
+Brief description of the app
 
-## Getting Started
+### Configuration variables
 
-### 1. Create a new repository from this template
+This table lists the configuration variables required to operate Example App Name. These variables are specified when configuring a Product Name asset in Splunk SOAR.
 
-Click the "Use this template" button at the top of this repository to create a new repository based on this template.
+VARIABLE | REQUIRED | TYPE | DESCRIPTION
+-------- | -------- | ---- | -----------
+**host** | required | string | Example Hostname or IP address |
+**api_key** | required | string | Example API Key for authentication |
 
-### 2. Choose repository name
+### Supported Actions
 
-Names should be lowercase and ideally not use characters like underscores or dashes. `ciscosma` is an example repo name. The repository name you choose will be automatically applied to all template files when the setup workflow runs. For example, if you name your repository `ciscosma`, the template files will be renamed accordingly:
+[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity
 
-- `template_connector.py` → `ciscosma_connector.py`
-- `template.json` → `ciscosma.json`
-- etc...
+## action: 'test connectivity'
 
-### 3. Initial Setup (Automatic)
+Validate the asset configuration for connectivity
 
-After creating your repository, the `setup-from-template.yml` GitHub workflow will automatically:
+Type: **test** \
+Read only: **True**
 
-- Setup repository files for your connector
-- Update development tools to the latest version
-- Cleanup
+#### Action Parameters
 
-### 4. Customize Your App
+No parameters are required for this action
 
-Once the workflow completes, work can begin:
+#### Action Output
 
-- Update `your_repo_name.json` to:
+No Output
 
-  - Modify app information (appid, name, description, vendor, etc...)
-  - Configure authentication parameters
-  - Add logo files
+______________________________________________________________________
 
-- Start developing 🚀
+Auto-generated Splunk SOAR Connector documentation.
 
-## Contributing
+Copyright 2025 Splunk Inc.
 
-Please have a look at our [Contributing Guide](https://github.com/Splunk-SOAR-Apps/.github/blob/main/.github/CONTRIBUTING.md) for guidelines if you are interested in contributing, raising issues, or learning more about open-source SOAR apps.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-Please also review our [Conventions](https://github.com/Splunk-SOAR-Apps/.github/blob/main/.github/CONTRIBUTING.md) to ensure you follow up-to-date standards.
+http://www.apache.org/licenses/LICENSE-2.0
 
-## Legal and License
-
-This SOAR App is licensed under the Apache 2.0 license. Please see our [Contributing Guide](https://github.com/Splunk-SOAR-Apps/.github/blob/main/.github/CONTRIBUTING.md#legal-notice) for further details.
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
