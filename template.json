@@ -9,7 +9,7 @@
     "product_name": "Product Name",
     "product_version_regex": ".*",
     "publisher": "Splunk",
-    "license": "Copyright (c) 2025 Splunk Inc.",
+    "license": "Copyright (c) 2025-2026 Splunk Inc.",
     "app_version": "1.0.1",
     "latest_tested_versions": [
         "Version X.Y.Z, Month Year"
