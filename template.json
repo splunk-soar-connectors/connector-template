@@ -29,9 +29,15 @@
             "description": "Example Hostname or IP address",
             "required": true
         },
+        "verify_server_cert": {
+            "data_type": "boolean",
+            "order": 1,
+            "description": "Verify the API server certificate",
+            "default": true
+        },
         "api_key": {
             "data_type": "string",
-            "order": 1,
+            "order": 2,
             "description": "Example API Key for authentication",
             "required": true
         }

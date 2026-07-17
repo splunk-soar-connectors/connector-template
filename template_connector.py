@@ -34,7 +34,7 @@ class TemplateConnector(BaseConnector):
         super().__init__()
         self._base_url = None
         self._api_key = None
-        self._verify = False
+        self._verify = True
 
     def _make_rest_call(self, endpoint, action_result, headers=None, params=None, data=None, json=None, method="get"):
         """
@@ -107,7 +107,7 @@ class TemplateConnector(BaseConnector):
         # Get configuration parameters
         self._base_url = config.get("host")
         self._api_key = config.get("api_key")
-        self._verify = config.get("verify_server_cert", False)
+        self._verify = config.get("verify_server_cert", True)
 
         return phantom.APP_SUCCESS
 
