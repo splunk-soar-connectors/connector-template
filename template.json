@@ -9,7 +9,7 @@
     "product_name": "Product Name",
     "product_version_regex": ".*",
     "publisher": "Splunk",
-    "license": "Copyright (c) 2025 Splunk Inc.",
+    "license": "Copyright (c) 2025-2026 Splunk Inc.",
     "app_version": "1.0.1",
     "latest_tested_versions": [
         "Version X.Y.Z, Month Year"
@@ -29,9 +29,15 @@
             "description": "Example Hostname or IP address",
             "required": true
         },
-        "api_key": {
-            "data_type": "string",
+        "verify_server_cert": {
+            "data_type": "boolean",
             "order": 1,
+            "description": "Verify the API server certificate",
+            "default": true
+        },
+        "api_key": {
+            "data_type": "password",
+            "order": 2,
             "description": "Example API Key for authentication",
             "required": true
         }
