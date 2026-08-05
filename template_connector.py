@@ -107,7 +107,7 @@ class TemplateConnector(BaseConnector):
         # Get configuration parameters
         self._base_url = config.get("host")
         self._api_key = config.get("api_key")
-        self._verify = config.get("verify_server_cert", True)
+        self._verify = config.get("verify_server_cert") is not False
 
         return phantom.APP_SUCCESS
 
